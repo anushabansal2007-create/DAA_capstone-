@@ -1,0 +1,42 @@
+==============================================================
+                 MINI-COURIER PLANNER
+==============================================================
+Starting depot: Depot
+Vehicle parcel capacity: 15 kg
+
+1. PARCELS SORTED BY PRIORITY AND DEADLINE
+------------------------------------------
+P104 | SouthTown  | weight= 5 | value= 80 | priority=5 | deadline=1
+P101 | NorthTown  | weight= 4 | value= 60 | priority=5 | deadline=2
+P102 | EastTown   | weight= 6 | value= 90 | priority=4 | deadline=1
+P106 | HillSide   | weight= 2 | value= 35 | priority=4 | deadline=2
+P107 | EastTown   | weight= 4 | value= 65 | priority=3 | deadline=2
+P103 | WestTown   | weight= 3 | value= 50 | priority=3 | deadline=3
+P105 | LakeView   | weight= 7 | value=100 | priority=2 | deadline=4
+P108 | NorthTown  | weight= 5 | value= 75 | priority=1 | deadline=5
+
+2. OPTIMAL PARCELS SELECTED FOR THIS TRIP
+-----------------------------------------
+P104 | SouthTown  | weight= 5 | value= 80 | priority=5 | deadline=1
+P101 | NorthTown  | weight= 4 | value= 60 | priority=5 | deadline=2
+P106 | HillSide   | weight= 2 | value= 35 | priority=4 | deadline=2
+P107 | EastTown   | weight= 4 | value= 65 | priority=3 | deadline=2
+Total selected weight: 15 kg / 15 kg
+Maximum total parcel value: 240
+
+3. SHORTEST PATHS FROM DEPOT (DIJKSTRA)
+Depot -> EastTown: Depot -> EastTown (6.0 km)
+Depot -> HillSide: Depot -> EastTown -> HillSide (11.0 km)
+Depot -> NorthTown: Depot -> NorthTown (4.0 km)
+Depot -> SouthTown: Depot -> SouthTown (7.0 km)
+
+4. DELIVERY ROUTE (NEAREST-NEIGHBOR TSP APPROXIMATION)
+Depot -> NorthTown -> EastTown -> SouthTown -> HillSide -> Depot
+Approximate round-trip route distance: 24.0 km
+
+5. PERFORMANCE SUMMARY
+Sorting time:       0.000015 seconds
+Knapsack time:      0.000023 seconds
+Route planning:     0.000046 seconds
+
+Planner execution completed successfully.

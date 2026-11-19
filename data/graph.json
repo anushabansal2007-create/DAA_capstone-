@@ -1,0 +1,40 @@
+{
+    "Depot": {
+        "NorthTown": 4,
+        "EastTown": 6,
+        "WestTown": 5,
+        "SouthTown": 7
+    },
+    "NorthTown": {
+        "Depot": 4,
+        "EastTown": 3,
+        "LakeView": 4
+    },
+    "EastTown": {
+        "Depot": 6,
+        "NorthTown": 3,
+        "SouthTown": 2,
+        "HillSide": 5
+    },
+    "WestTown": {
+        "Depot": 5,
+        "SouthTown": 3,
+        "LakeView": 6
+    },
+    "SouthTown": {
+        "Depot": 7,
+        "EastTown": 2,
+        "WestTown": 3,
+        "HillSide": 4
+    },
+    "LakeView": {
+        "NorthTown": 4,
+        "WestTown": 6,
+        "HillSide": 3
+    },
+    "HillSide": {
+        "EastTown": 5,
+        "SouthTown": 4,
+        "LakeView": 3
+    }
+}

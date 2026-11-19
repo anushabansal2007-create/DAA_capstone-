@@ -1,0 +1,9 @@
+id,destination,weight,value,priority,deadline
+P101,NorthTown,4,60,5,2
+P102,EastTown,6,90,4,1
+P103,WestTown,3,50,3,3
+P104,SouthTown,5,80,5,1
+P105,LakeView,7,100,2,4
+P106,HillSide,2,35,4,2
+P107,EastTown,4,65,3,2
+P108,NorthTown,5,75,1,5
